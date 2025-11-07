@@ -3,142 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | UPPAL IT SUPPORT</title>
+    <title>Styled Table Example</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: lightgrey;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        /* Navbar */
-        .navbar {
-            background-color: #333;
-            color: white;
-            padding: 12px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .navbar h1 {
-            font-size: 22px;
-            margin: 0;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: 500;
-        }
-
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-
-        /* Contact Section */
-        .contact-container {
-            max-width: 600px;
+        .table-container {
+            margin: 50px auto;         /* Center table horizontally */
+            width: 80%;                /* Table width relative to screen */
             background-color: white;
-            margin: 60px auto;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
-        .contact-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .contact-container p {
-            text-align: center;
-            margin-bottom: 25px;
-            color: #666;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: 500;
-        }
-
-        input, textarea {
+        table {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 18px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 15px;
+            border-collapse: collapse; /* Removes double borders */
+            margin-top: 10px;
         }
 
-        input:focus, textarea:focus {
-            border-color: #007BFF;
-            outline: none;
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
         }
 
-        button {
-            width: 100%;
+        th {
             background-color: #007BFF;
             color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
         }
 
-        button:hover {
-            background-color: #0056b3;
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternate row color */
         }
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #333;
-            color: white;
-            margin-top: 40px;
+        tr:hover {
+            background-color: #ddd;    /* Highlight on hover */
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <h1>UPPAL IT SUPPORT</h1>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
-        </div>
+    <div class="table-container">
+        <table>
+            <caption>Employee Details</caption>
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Krishna Sairam</td>
+                    <td>IT Support</td>
+                    <td>Hyderabad</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Ravi Kumar</td>
+                    <td>Networking</td>
+                    <td>Chennai</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Priya Sharma</td>
+                    <td>Software</td>
+                    <td>Bangalore</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-
-    <!-- Contact Form -->
-    <div class="contact-container">
-        <h2>Get in Touch</h2>
-        <p>We’d love to hear from you! Please fill out the form below.</p>
-
-        <form action="/submit_contact" method="POST">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-
-    <footer>
-        © 2025 UPPAL IT SUPPORT | All Rights Reserved
-    </footer>
 
 </body>
 </html>
