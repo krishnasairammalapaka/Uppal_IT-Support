@@ -7,9 +7,12 @@
     <style>
         body{
         background-color: lightgrey;
-        /* display: flex; */
-        justify-content: center;
-        align-items: center;
+        /* display: flex;                 enable flex layout */
+         flex-direction: column;       /* keep navbar on top if you want */
+        align-items: center;           /* center horizontally */
+        justify-content: center;       /* center vertically */
+        height: 100vh;                 /* full screen height */
+        margin: 0;
         }
     
         button{
@@ -23,22 +26,28 @@
             font: Times New Roman;
         }
         .contact-admin {
-            margin: 50px;
-            font: Times New Roman;
-            font-size: 20px;
-            text-align: center;
-            border: 1px;
-            padding: 20px;
+            max-width: 350px;
+            background-color: white;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
         .contact-admin form {
             display: flex;
             flex-direction: column;
-            width: 300px;
+            width: 350px;
+            text-align: left;
         }
         .contact-admin h2 {
             margin-top: 10px;
             margin-bottom: 5px;
             text-align: center;
+        }
+        contact-admin label{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border-radius: 1px;
         }
     </style>
 </head>
