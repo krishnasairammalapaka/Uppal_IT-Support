@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lucida+Console&display=swap" rel="stylesheet">
+    <title colour="red">UPPAL IT SUPPORT</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        .navbar{
+            background-color: lightgrey;
+            border-bottom: black;
+            padding: 10px;
+            margin-bottom: 20px;
+            
+        }
+        
+        button{
+            background-color: brown;
+            color: black;
+            padding: 10px 20px;
+            margin: 1px;
+            border: black;
+            border-radius: 25px;
+            cursor: pointer;
+            font: Times New Roman;
+        }
+        button:hover{
+            background-color: darkred;
+        }
+        li{
+            margin-bottom: 15px;
+            font: Times New Roman;
+            font-size: 25px;
+        }
+        p{
+            width: 50%;
+            text-align: justify;
+            font: Times New Roman;
+            font-size: 20px;
+        }
+        #About {
+            margin: 20px;
+        }
+        .about-image {
+            width: 550px;
+            height: auto;
+            border-radius: 10px;
+            float: right;
+            margin-left: 20px ;
+            border-color: violet;
+        }
+        .about-image:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .hero-section {
+            background-image: url('/images/ITEngineers.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: left;
+            padding: 50px;;
+            margin-bottom: 20px;
+            height: 400px;
+            font-family: 'Poppins', sans-serif;
+            
+            
+        }
+        .hero-text {
+            /* text-align: left;
+            margin-top: 50px; */
+            /* font-family: ''; */
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        
+        .hero-text h1 {
+            font-size: 35px;
+            margin-bottom: 15px;
+            /* font-family: 'Lucida Console'; */
+        }
+        .hero-text p {
+            font-size: 20px;
+            /* font-family: 'Lucida Console'; */
+            text-align: justify;
+            line-height: 1.5;
+            width: 50%;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav >
+            <table width="100%" cellpadding="10" cellspacing="6">
+                <tr>
+                    <td>
+                        <a href="index.html">
+                              <img src="/images/Cyient_logo-removebg-preview.png" width="100" height="auto" alt="Cyient Logo" />
+                        </a>
+                    </td>
+                    
+                    <td align="right">
+                        <a href="index.html"><button type="button">About</button></a>
+                        <a href="network.html"><button type="button">Network</button></a>
+                        <a href="calls.html"><button type="button">Calls</button></a>
+                        <a href="tickets.html"><button type="button">Tickets</button></a>
+                        <a href="contact.html"><button type="button">Contact</button></a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1 align="margin-left"><b>Welcome to UPPAL IT SUPPORT</b></h1>
+            <p>Empowering digital transformation with innovation and reliability.</p>
+         </div>
+        <button type="button">Get Started</button>
+    </div>
+
+
+    <div id="About">
+    <h2 align="center">About US</h2>
+     <img src="/images/Cyient-DLM-Hyd-office.png" class="about-image" alt="IT Support Image" />
+        <ol>
+            <li><b>Driving Digital Transformation</b>
+                <p>Cyient’s IT team plays a central role in enabling the company’s global digital ecosystem — supporting engineering, manufacturing, and business operations through innovative technology solutions.</p>
+            </li>
+            <li><b>Robust IT Infrastructure</b>
+                <p>The team manages a secure and scalable infrastructure, ensuring uninterrupted connectivity and performance across global offices and delivery centers.</p>
+            </li>
+            <li><b>Cloud & Data Expertise</b>
+                <p>Specialists in cloud computing (AWS, Azure) and data management, the IT team enables seamless collaboration, analytics, and digital operations across projects and clients.</p>
+            </li>
+             <li><b>Cybersecurity at the Core</b>
+                 <p>Cyient’s IT professionals uphold world-class information security standards, ensuring compliance with ISO 27001, GDPR, and other international data protection norms.</p>
+            </li>
+            <li><b>Enterprise Systems & Automation</b>
+                <p>The IT team implements and maintains enterprise platforms like SAP, ServiceNow, and Salesforce, and drives automation to enhance productivity and efficiency.</p>
+            </li>
+        </ol>
+        
+    </div>
+</body>
+</html>
+
